@@ -1,5 +1,6 @@
 #importonce
 
+.const colorRam = $d800
 .const screen = $0400
 .const screen_0 = $0400
 .const screen_0_40 = $0428
@@ -102,18 +103,30 @@ clear_next_char:
 }
 
 .macro randomize_screen() {
+  // Place some chars on screen memory.
   ldx #0
-  ldy #0
   lda #0
 next_char:
   .for (var row = 0; row < 25; row++) {
     sta screen + row * 40,x
   }
   inx
-  iny
-  tya
-  cmp #40
+  txa
+  cpx #40
   bne next_char
+
+  // Place some colors in color memory.
+  ldx #0
+  lda #0
+next_color:
+  .for (var row = 0; row < 25; row++) {
+    sta colorRam + row * 40,x
+  }
+  inx
+  txa
+  cpx #40
+  bne next_color
+
 }
 
 .macro nops(count) {

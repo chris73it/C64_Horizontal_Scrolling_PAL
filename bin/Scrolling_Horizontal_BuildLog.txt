@@ -9,8 +9,9 @@ Memory Map
 ----------
 Default-segment:
   $0801-$080c Basic
-  $080e-$0d2e Basic End
+  $080e-$0b22 Basic End
   $2000-$2088 Default
+  $3000-$5d07 ScrollingCode
 
 Writing Vice symbol file: C:\C64\Tools\KickAssembler\Mini_Projects\Scrolling_Horizontal\bin\Scrolling_Horizontal.vs
 Writing Symbol file: bin\Scrolling_Horizontal.sym

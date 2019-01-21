@@ -1,19 +1,14 @@
-.label vic2_interrupt_status_register=$d019
-.label check_5=$bad
-.label check_6=$b65
-.label check_3=$c3d
-.label cia1_interrupt_control_register=$dc0d
-.label check_4=$bf5
-.label check_1=$ccd
-.label check_2=$c85
-.label check_0=$ad5
-.label exiting_irq1=$d12
-.label vic2_screen_control_register1=$d011
-.label vic2_screen_control_register2=$d016
+.label check_5=$ad9
+.label check_6=$ad0
+.label check_3=$aeb
+.label check_4=$ae2
+.label check_1=$afd
+.label check_2=$af4
+.label check_0=$abe
 .label wait_6_good_lines=$203c
 .label main=$80e
-.label wait_8_rows_with_20_cycles_bad_lines=$2076
-.label wait_1_row_with_20_cycles_bad_line=$204f
+.label scroll_rows_12_to_14=$40e3 {
+}
 .namespace Sprites {
   .label vertical_stretch_bits=$d017
   .label horizontal_stretch_bits=$d01d
@@ -23,22 +18,44 @@
   .label pointers=$7f8
   .label enable_bits=$d015
 }
-.label loop=$8c4
-.label wait_one_bad_line_minus_3=$2007 {
+.label scroll_rows_3_to_5=$51c6 {
 }
+.label loop=$916
 .label border=$d020
-.label wait_2_rows_with_20_cycles_bad_lines=$2059
-.label wait_one_good_line_minus_jsr_and_rts=$2027 {
-}
+.label end_of_checks=$b06
 .label vic2_rasterline_register=$d012
 .label cia2_interrupt_control_register=$dd0d
 .label wait_one_bad_line=$2000 {
 }
 .label wait_4_rows_with_20_cycles_bad_lines=$2066
 .label background=$d021
-.label irq1=$8c7 {
-}
-.label vic2_interrupt_control_register=$d01a
-.label check_7=$b1d
 .label wait_one_good_line=$200c {
 }
+.label vic2_interrupt_status_register=$d019
+.label cia1_interrupt_control_register=$dc0d
+.label scroll_rows_18_to_20=$35a1 {
+}
+.label exiting_irq1=$b08
+.label vic2_screen_control_register1=$d011
+.label vic2_screen_control_register2=$d016
+.label wait_8_rows_with_20_cycles_bad_lines=$2076
+.label wait_1_row_with_20_cycles_bad_line=$204f
+.label scroll_rows_6_to_8=$4c25 {
+}
+.label scroll_rows_0_to_2=$5767 {
+}
+.label scroll_rows_21_to_23=$3000 {
+}
+.label wait_one_bad_line_minus_3=$2007 {
+}
+.label wait_2_rows_with_20_cycles_bad_lines=$2059
+.label scroll_rows_15_to_17=$3b42 {
+}
+.label wait_one_good_line_minus_jsr_and_rts=$2027 {
+}
+.label scroll_rows_9_to_11=$4684 {
+}
+.label irq1=$919 {
+}
+.label vic2_interrupt_control_register=$d01a
+.label check_7=$ac7
