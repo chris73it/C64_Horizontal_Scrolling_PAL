@@ -103,10 +103,14 @@ clear_next_char:
 }
 
 .macro randomize_screen() {
-  // Place some chars on screen memory.
+  // Place some chars on screen memory except blank space.
   ldx #0
   lda #0
 next_char:
+  cmp #$20
+  bne loop_chars
+  lda #$21 // skip blank space
+loop_chars:
   .for (var row = 0; row < 25; row++) {
     sta screen + row * 40,x
   }
@@ -115,10 +119,16 @@ next_char:
   cpx #40
   bne next_char
 
-  // Place some colors in color memory.
+  // Place some colors in color memory except black.
   ldx #0
-  lda #0
+  lda #$00
 next_color:
+check_black:
+  and #$0f
+  cmp #$02
+  bcs loop_colors
+  lda #$02
+loop_colors:
   .for (var row = 0; row < 25; row++) {
     sta colorRam + row * 40,x
   }
@@ -126,7 +136,6 @@ next_color:
   txa
   cpx #40
   bne next_color
-
 }
 
 .macro nops(count) {
