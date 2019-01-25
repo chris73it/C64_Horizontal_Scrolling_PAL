@@ -29,7 +29,7 @@ main:
   sei
     lda #BLACK
     sta background
-    lda #WHITE
+    //lda #WHITE
     sta border
     clear_screen(96)
     randomize_screen()
