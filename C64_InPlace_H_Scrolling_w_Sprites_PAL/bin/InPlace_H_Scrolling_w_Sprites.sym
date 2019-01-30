@@ -1,0 +1,69 @@
+.label check_5=$add
+.label check_6=$ad4
+.label check_3=$aef
+.label check_4=$ae6
+.label check_1=$b01
+.label check_2=$af8
+.label check_0=$ac2
+.label wait_6_good_lines=$2069
+.label main=$80e
+.label scroll_rows_12_to_14=$50e3 {
+}
+.label scroll_rows_3_to_5=$61c6 {
+}
+.label loop=$919
+.label border=$d020
+.label wait_one_good_line_minus_5=$202a {
+}
+.label end_of_checks=$b0a
+.label wait_1_row_minus_5=$208f
+.label vic2_rasterline_register=$d012
+.label cia2_interrupt_control_register=$dd0d
+.label wait_one_bad_line=$2000 {
+}
+.label wait_4_rows_with_20_cycles_bad_lines=$20b0
+.label background=$d021
+.label wait_one_good_line=$200f {
+}
+.label vic2_interrupt_status_register=$d019
+.label cia1_interrupt_control_register=$dc0d
+.label scroll_rows_18_to_20=$45a1 {
+}
+.label exiting_irq1=$b0c
+.label vic2_screen_control_register1=$d011
+.label vic2_screen_control_register2=$d016
+.label wait_8_rows_with_20_cycles_bad_lines=$20c0
+.namespace sprites {
+  .label vertical_stretch_bits=$d017
+  .label horizontal_stretch_bits=$d01d
+  .label positions=$d000
+  .label position_x_high_bits=$d010
+  .label colors=$d027
+  .label pointers=$7f8
+  .label enable_bits=$d015
+}
+.label wait_1_row_with_20_cycles_bad_line=$2099
+.label scroll_rows_6_to_8=$5c25 {
+}
+.label scroll_rows_0_to_2=$6767 {
+}
+.label scroll_rows_21_to_23=$4000 {
+}
+.label wait_one_bad_line_minus_3=$2007 {
+}
+.label wait_2_rows_with_20_cycles_bad_lines=$20a3
+.label scroll_rows_15_to_17=$4b42 {
+}
+.label wait_one_good_line_minus_jsr_and_rts=$2042 {
+}
+.label scroll_rows_9_to_11=$5684 {
+}
+.label wait_6_good_lines_minus_5=$207c
+.label wait_one_good_line_minus_5_minus_jsr_and_rts=$2057 {
+}
+.label irq1=$91c {
+}
+.label vic2_interrupt_control_register=$d01a
+.label wait_one_bad_line_minus_5_minus_3=$200c {
+}
+.label check_7=$acb

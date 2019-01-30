@@ -1,0 +1,18 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\C64\Tools\KickAssembler\Mini_Projects\C64_InPlace_H_Scrolling_w_Sprites_PAL\bin\InPlace_H_Scrolling_w_Sprites_Compiled.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$080c Basic
+  $080e-$0b93 Basic End
+  $2000-$20d2 Default
+  $3dc0-$3fc1 Blank sprites
+  $4000-$6d07 ScrollingCode
+
+Writing Vice symbol file: C:\C64\Tools\KickAssembler\Mini_Projects\C64_InPlace_H_Scrolling_w_Sprites_PAL\bin\InPlace_H_Scrolling_w_Sprites.vs
+Writing Symbol file: bin\InPlace_H_Scrolling_w_Sprites.sym

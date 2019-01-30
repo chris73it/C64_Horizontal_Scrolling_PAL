@@ -1,0 +1,17 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\C64\Tools\KickAssembler\Mini_Projects\C64_Horizontal_Scrolling_PAL-master\bin\Scrolling_Horizontal_Compiled.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$080c Basic
+  $080e-$0b22 Basic End
+  $2000-$2088 Default
+  $3000-$5d37 ScrollingCode
+
+Writing Vice symbol file: C:\C64\Tools\KickAssembler\Mini_Projects\C64_Horizontal_Scrolling_PAL-master\bin\Scrolling_Horizontal.vs
+Writing Symbol file: bin\Scrolling_Horizontal.sym

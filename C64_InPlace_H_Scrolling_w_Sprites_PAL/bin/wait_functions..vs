@@ -1,0 +1,14 @@
+al C:d019 .vic2_interrupt_status_register
+al C:2059 .wait_2_rows_with_20_cycles_bad_lines
+al C:d011 .vic2_screen_control_register1
+al C:d016 .vic2_screen_control_register2
+al C:203c .wait_6_good_lines
+al C:2027 .wait_one_good_line_minus_jsr_and_rts
+al C:2076 .wait_8_rows_with_20_cycles_bad_lines
+al C:d012 .vic2_rasterline_register
+al C:204f .wait_1_row_with_20_cycles_bad_line
+al C:2000 .wait_one_bad_line
+al C:2066 .wait_4_rows_with_20_cycles_bad_lines
+al C:2007 .wait_one_bad_line_minus_3
+al C:d01a .vic2_interrupt_control_register
+al C:200c .wait_one_good_line

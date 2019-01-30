@@ -1,0 +1,12 @@
+parsing
+flex pass 1
+Output pass
+Writing prg file: C:\C64\Tools\KickAssembler\Mini_Projects\Scrolling_Horizontal\bin\wait_functions._Compiled.prg
+
+Memory Map
+----------
+Default-segment:
+  $2000-$2088 Default
+
+Writing Vice symbol file: C:\C64\Tools\KickAssembler\Mini_Projects\Scrolling_Horizontal\bin\wait_functions..vs
+Writing Symbol file: bin\wait_functions..sym
